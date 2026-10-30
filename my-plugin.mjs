@@ -1,5 +1,5 @@
-export const name = 'my-plugin'
+export const name = 'dsh-my-tool'
 
-export function apply(ctx) {
+export function apply() {
     console.log('HELLO WORLD!')
 }
