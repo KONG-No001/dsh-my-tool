@@ -1,0 +1,25 @@
+{
+  "name": "dsh-my-tool",
+  "version": "0.1.0",
+  "description": "A minimal Hello World plugin for DeepSeek Harness.",
+  "type": "module",
+  "main": "./my-plugin.mjs",
+  "exports": {
+    ".": "./my-plugin.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "my-plugin.mjs",
+    "cordis.patch.yml"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KONG-No001/dsh-my-tool.git"
+  },
+  "keywords": ["dsh-plugin", "deepseek-harness", "hello-world"],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
